@@ -61,7 +61,6 @@ document.onkeyup = function(event) {
     if (correct===0){
         trycount--;
         tries.innerHTML=trycount;
-        setTimeout(reset, 3000);
     }
     if (total===0) {
         scorenum++;
@@ -72,6 +71,7 @@ document.onkeyup = function(event) {
         }
         else if (trycount===0) {
             result.innerHTML="You Lose!";
+            setTimeout(reset, 3000);
         }
     console.log("total:"+total);
 }
