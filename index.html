@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Word Game</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Cabin Sketch Font -->
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      background-image: url("Images/background.jpg");
+    }
+    .cabin {
+      font-family: 'Cabin Sketch', cursive;
+      color: black;
+      height:100px;
+    }
+    .main {
+      background-color: white;
+      opacity: .9;
+    }
+    #imagehold {
+      max-height:450px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container main mt-5 rounded">
+
+    <h1 class = "cabin text-center py-3">Guess the Animal</h1>
+    <div class="text-center">
+    <p>Guess the word</p>
+    <p>You have <span id="tries"></span> remaining</p>
+    <p id="word"></p>
+    <img id="imagehold" src=""></img>
+    <p id="Result" class="cabin"></p>
+    <p>Your score is: <span id="score"></span> </p>
+  </div>
+        
+  
+  </div>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>
